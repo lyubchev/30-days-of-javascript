@@ -51,7 +51,8 @@ body {
     border-radius: 30px;
     position: absolute;
     z-index: 5;
-    transition: all 0.5s;
+    transition: all 0.3s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     top: 50%;
     left: 0%;
 }
