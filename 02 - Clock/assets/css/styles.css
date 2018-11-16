@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Medium.ttf');
+}
+
+h1 {
+    font-family: 'Avenir';
+}
+
 html {
     background: #EFEFEF;
     background-size: cover;
@@ -10,6 +19,7 @@ body {
     margin: 0;
     font-size: 2rem;
     display: flex;
+    flex-direction: column;
     flex: 1;
     min-height: 100vh;
     align-items: center;
@@ -24,7 +34,6 @@ body {
     position: relative;
     padding: 4rem;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40%;
 }
 
 .clock-face {
@@ -68,4 +77,8 @@ body {
     margin: auto;
     top: 49%;
     left: 49%;
+}
+
+#current-time {
+    letter-spacing: 3px;
 }
