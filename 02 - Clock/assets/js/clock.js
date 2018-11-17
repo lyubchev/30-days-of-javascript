@@ -1,4 +1,4 @@
-secHand.style.background = 'red';
+secHand.style.background = 'rgb(217, 66, 53)';
 secHand.style.transformOrigin = '80%';
 secHand.style.marginLeft = '2%';
 secHand.style.marginTop = '0%';

@@ -9,8 +9,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="clock">
-        <div class="clock-face">
+      <h1 id="current-time">nothing tbh.</h1>
+      <div class="analog-clock">
+        <div class="analog-clock-face">
           <img
             class="clock-img"
             src="https://mbtskoudsalg.com/images/watch-face-template-png-3.png"
@@ -22,8 +23,16 @@
           <div class="circle"></div>
         </div>
       </div>
-
-      <h1 id="current-time">nothing tbh.</div>
+      <div class="digital-clock">
+        <div class="digital-clock-face">
+          <div id="time"></div>
+        </div>
+      </div>
+      <div id="clock-switcher">
+        <button class="btn" id="switcher">
+          Switch to Digital Clock
+        </button>
+      </div>
     </div>
   </body>
 </html>
