@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Medium.ttf');
+}
+
+div {
+    width: 50%;
+    font-family: 'Avenir';
+    background-color: rgb(30, 30, 30);
+    color: #efefef;
+    font-size: 2rem;
+    position: relative;
+    margin: auto;
+}
+
+body {
+    text-align: center;
+}
