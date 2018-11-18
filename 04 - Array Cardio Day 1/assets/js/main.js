@@ -110,6 +110,16 @@ console.table(sortedByYearsLived);
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+
+const sortedPeople = people.sort((a, b) => {
+  const firstLastName = a.split(', ')[1];
+  const secondLastName = b.split(', ')[1];
+
+  return firstLastName >= secondLastName ? 1 : -1;
+});
+console.log('7. Sort the people alphabetically by last name');
+console.table(sortedPeople);
+
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = [
@@ -128,3 +138,16 @@ const data = [
   'car',
   'truck'
 ];
+
+const sumInstances = data.reduce((vehicles, vehicle) => {
+  if (vehicles[vehicle]) {
+    vehicles[vehicle]++;
+  } else {
+    vehicles[vehicle] = 1;
+  }
+
+  return vehicles;
+}, {});
+
+console.log('8. Sum up the instances of each of these');
+console.table(sumInstances);
